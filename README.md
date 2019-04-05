@@ -42,7 +42,9 @@ A: Closure is when nested functions have access to the parent's scope even after
 A: The four rules are global binding, implicit binding, explicit binding, and new binding. Implicit binding is whenever a function is called, the object to the left of the dot is "this". Explicit binding refers to when the call() or apply() methods are used to pass "this" as an argument. New binding refers to when a new instance of an object is created using the new keyword. This will refer to the object that's returned by the constructor function. If none of the above apply, this will bind to the global object which is usually the window.
 
 5. Why do we need super() in an extended class?
-A: Super() when used will allow a subclass to inherit attributes and methods that are available to the parent class. 
+A: Super() when used will allow a subclass to inherit attributes and methods that are available to the parent class.
+
+//Testing
 
 ## Project Set up
 
