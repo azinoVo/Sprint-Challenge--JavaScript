@@ -137,6 +137,11 @@ zooAnimals.forEach(function(info){
 });
 console.log(animalNames);
 
+// Arrow Function
+// zooAnimals.forEach((info) => {
+//   animalNames.push(`Name: ${info.animal_name}, Genus species: ${info.scientific_name}`);
+// });
+
 /* Request 2: .map()    
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  
@@ -150,6 +155,11 @@ const lowerCase = zooAnimals.map(function(i){
 
 console.log(lowerCase); 
 
+// Arrow Function
+// const lowerCase = zooAnimals.map((i) =>{
+//   return i.animal_name.toLowerCase();
+// });
+
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Find out which animals have a population less than 5.
@@ -159,6 +169,11 @@ const largerPopulation = zooAnimals.filter(function(i){
   return i.population < 5;
 });
 console.log(largerPopulation);
+
+//Arrow Function
+// const largerPopulation = zooAnimals.filter((i) => {
+//   return i.population < 5;
+// });
 
 /* Request 4: .reduce() 
 
@@ -172,8 +187,13 @@ The zoos need to know their total animal population across the United States.  F
 const populationTotal = zooAnimals.reduce(function(accumulator,i){
   return accumulator + i.population;
 },0);
+
 console.log(populationTotal);
 
+//Arrow Function
+// const populationTotal = zooAnimals.reduce((accumulator,i) => {
+//   return accumulator + i.population;
+// },0);
 
 /* 
 
