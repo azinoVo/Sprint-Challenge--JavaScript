@@ -98,7 +98,7 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 for (let i=0; i < universities.length; i++) {
-  if(universities[i].includes("Uni") === true) {
+  if(universities[i].includes("Uni")) {
     uni.push(universities[i]);
   }
 }
@@ -113,7 +113,7 @@ console.log(uni.length);
 
 
 zooAnimals = [
-  {"animal_name":"Jackal, asiatic","population":5,"scientific_name":"Canis aureus","state":"Kentucky"},
+{"animal_name":"Jackal, asiatic","population":5,"scientific_name":"Canis aureus","state":"Kentucky"},
 {"animal_name":"Screamer, southern","population":1,"scientific_name":"Chauna torquata","state":"Alabama"},
 {"animal_name":"White spoonbill","population":8,"scientific_name":"Platalea leucordia","state":"Georgia"},
 {"animal_name":"White-cheeked pintail","population":1,"scientific_name":"Anas bahamensis","state":"Oregon"},
